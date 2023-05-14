@@ -1,0 +1,26 @@
+
+
+Grid search is a hyperparameter tuning technique used to determine the best combination of hyperparameters for a machine learning model.
+Hyperparameters are adjustable parameters that are set before training a model, such as learning rate, number of hidden layers,
+or regularization strength. Grid search is a popular method for optimizing these hyperparameters by searching through all possible
+combinations of hyperparameters in a predefined range.
+
+Grid search with cross-validation (Grid Search CV) is a more advanced technique that uses k-fold cross-validation to evaluate each
+combination of hyperparameters. In k-fold cross-validation, the data is split into k equal parts, or "folds", and the model is trained
+and tested k times, with each fold serving as the test set once. This helps to reduce overfitting and provide a more accurate estimate 
+of model performance.
+
+Grid Search CV involves the following steps:
+
+1. Define the hyperparameters to tune and their respective ranges.
+2. Define the model to use for training and evaluation.
+3. Define the evaluation metric to optimize (such as accuracy or AUC).
+4. Use GridSearchCV class from scikit-learn library in Python, to perform the search across the hyperparameter space, by specifying 
+the range of hyperparameters and the evaluation metric to optimize.
+5. Fit the model to the training data and evaluate its performance using cross-validation.
+6. Select the best hyperparameters based on the evaluation metric and train the final model using the best hyperparameters on the 
+full training data.
+
+Grid search with cross-validation can be a computationally expensive process, as it involves training and evaluating multiple models
+with different combinations of hyperparameters. However, it can lead to significant improvements in model performance and is often
+used in practice to fine-tune machine learning models.

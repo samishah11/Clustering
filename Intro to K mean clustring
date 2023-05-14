@@ -1,0 +1,22 @@
+K-means clustering is an unsupervised machine learning algorithm used for partitioning a dataset into k clusters or groups.
+The algorithm works by iteratively assigning each data point to the nearest cluster center and recalculating the cluster
+centers until convergence is achieved.
+
+The K-means clustering algorithm involves the following steps:
+
+1. Initialization: Choose k initial cluster centers randomly from the data points or by other means. These initial centers are
+the starting point for the algorithm.
+
+2. Assignment: Assign each data point to the nearest cluster center based on the Euclidean distance between the data point and the center.
+
+3. Recalculation: Calculate the mean of the data points in each cluster, and use this value to update the cluster center.
+
+4. Repeat: Repeat steps 2 and 3 until convergence is achieved. Convergence is defined as no change in cluster assignments or cluster centers.
+
+5. Output: The final output of the algorithm is k clusters, with each cluster containing the data points assigned to it.
+
+The K-means algorithm is often used for exploratory data analysis, data compression, and image segmentation. However, it has
+some limitations, such as the sensitivity to the initial cluster centers and the requirement to specify the number of clusters
+in advance. There are also variations of the algorithm, such as the K-medoids algorithm, that can be used to address some of these limitations.
+
+In Python, the K-means algorithm can be implemented using libraries such as scikit-learn or TensorFlow.
